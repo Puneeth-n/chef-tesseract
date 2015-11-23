@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-%w(libtiff-devel libpng-devel libjpeg-devel autoconf libtool).each do |pkg|
+%w(libtiff-dev libpng-dev libjpeg-dev autoconf libtool).each do |pkg|
   package pkg do
     action :install
   end
