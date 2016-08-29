@@ -24,7 +24,7 @@
 end
 
 remote_file "#{Chef::Config[:file_cache_path]}/leptonica.tar.gz" do
-  source "https://leptonica.googlecode.com/files/leptonica-1.69.tar.gz"
+  source "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/leptonica/leptonica-1.69.tar.gz"
 end
 
 bash "compile_leptonica_source" do
