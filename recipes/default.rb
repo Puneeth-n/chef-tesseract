@@ -40,7 +40,7 @@ bash "compile_leptonica_source" do
 end
 
 remote_file "#{Chef::Config[:file_cache_path]}/tesseract.tar.gz" do
-  source "https://tesseract-ocr.googlecode.com/files/tesseract-ocr-3.02.02.tar.gz"
+  source "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tesseract-ocr/tesseract-ocr-3.02.02.tar.gz"
 end
 
 bash "compile_tesseract_source" do
@@ -60,7 +60,7 @@ execute "ldconfig" do
 end
 
 remote_file "#{Chef::Config[:file_cache_path]}/tesseract.eng.tar.gz" do
-  source "https://tesseract-ocr.googlecode.com/files/tesseract-ocr-3.02.eng.tar.gz"
+  source "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/tesseract-ocr/tesseract-ocr-3.02.eng.tar.gz"
 end
 
 bash "install_tesseract_english_language_pack" do
